@@ -1,0 +1,51 @@
+:root {
+  --width: 200px;
+}
+
+.search {
+  position: relative;
+  width: var(--width)
+}
+
+.input {
+  width: var(--width);
+  padding: 8px 4px;
+}
+
+.loading {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%)
+}
+
+.error {
+  color: red
+}
+
+.selected {
+  background-color: rgba(159, 159, 159, 0.316);
+}
+
+.list-wrapper {
+  padding: 0 6px;
+  width: var(--width);
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  line-height: 1.5;
+  overflow: auto;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 8px 0;
+  max-height: 40vh;
+  overflow: auto;
+  position: relative;
+}
+
+.list-item {
+  word-break: break-word;
+}
